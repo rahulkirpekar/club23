@@ -1,0 +1,61 @@
+Array:-
+------
+
+1) 1'D		2) 2'D		3) 3'D		4) N'D
+
+
+1) Primitive			2) NonPrimitive
+(Built-In)			(user Defined DataType)
+---> boolean			class---Employee/Product/Student/Customer
+---> byte
+---> char
+---> short
+---> int
+---> long
+---> float
+---> double
+
+1) Primitive:-
+----------------
+
+	int a[] = new int[5];		
+
+
+		a Array
+|---------------------------------------|
+  a[0]    a[1]    a[2]    a[3]    a[4]
+-----------------------------------------
+	|	|	|	|	|
+-----------------------------------------
+
+Scanner sc = new Scanner(System.in);
+
+for(int i=0;i<a.length;i++)
+{
+	System.out.println("Enter A["+i+"] : ");
+	a[i] = sc.nextInt();
+}
+for(int i=0;i<a.length;i++)
+{
+	System.out.println("A["+i+"] : " + a[i]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
