@@ -1,0 +1,24 @@
+Student s[5]--[rno name std schoolName]
+
+rno-----------Creation Object 
+name----------Creation Object 
+std-----------Creation Object 
+schoolName---static----Load Class 
+
+
+  s[0]	     s[1]        s[2]         s[3]        s[4]  
+------------------------------------------------------------
+rno	  |rno		|rno	    |rno	|rno	   |<---UNIQUE--Per Object Memory Allocation	 	
+name	  |name		|name	    |name	|name	   |<---UNIQUE--Per Object Memory Allocation
+std	  |std		|name       |std	|std       |<---UNIQUE--Per Object Memory Allocation
+------------------------------------------------------------	
+			  |
+			schoolname 			   |<---SAME----  
+
+1) Load class----> Static Data memebers Memory Allocation
+2) call main method
+
+	---> static method--->static Dm's use
+
+
+3) object create---occupy Memory Allocation of NonStatic Dm's 

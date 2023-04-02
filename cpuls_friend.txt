@@ -1,0 +1,81 @@
+friend Function:-
+-----------------
+	1) With Single Class :-
+	----------------------
+	Calc
+	 private:
+		int no1,no2
+	 public:
+		--scan()
+		--disp()
+		friend void swap(Calc &c);
+------------------------------------------
+	// Global Method 
+	void swap(Calc &c)
+	{
+		// swapping logic
+		no1<---->no2
+	}
+	main()
+	{
+		Calc c;
+		c.scan();// no1=10 , no2=20
+		c.disp();// no1=10 , no2=20
+
+
+	}
+
+
+
+
+
+
+	2) With Multiple Class:-
+	---------------------------
+	     class Calc2; 
+		Calc1			Calc2
+		{	int no1		{	int no2
+			--scan()		--scan()	
+			--disp()		--disp()
+friend void swap(Calc1 &c1 , Calc2 &c2);        void swap(Calc1 &c1 , Calc2 &c2);
+		}				}
+		-------------------------------------------
+			void swap(Calc1 &c1 , Calc2 &c2)
+			{
+				c1.no1<--->c2.no2
+			}
+			void main()
+			{
+				Calc1 c1;
+				Calc1 c2;
+
+				c1.scan();// 10
+				c2.scan();// 20
+		
+				c1.disp();
+				c2.disp();
+			
+				swap(c1,c2);
+				cout<<"\n Swapped Callingg : ";
+				c1.disp();
+				c2.disp();
+		
+			}
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
