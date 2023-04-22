@@ -1,0 +1,73 @@
+Polymorphism:-  Ability to take more than one form(method).
+---------------
+
+			Type of Polymorphism
+			---------------------
+
+	CompileTime-Compiler		Runtime--JVM
+		|			    |
+	1) CompileTime			2) Runtime
+	/ Static Binding		/ Dynamic Binding
+	/ Early Binding			/ Late Binding
+
+Ex:- 					Ex:- 				 
+-----					----
+---> Method Overloadding			---> Method Overrdding
+-----------------------------------------------------------------------------------------
+Method Overrdding:-
+---------------------
+				Vehicle(void getSpec()---OLD history)
+				  |
+	-----------------------------------------------------------
+	|			  |				|
+    TwVehicle			LmvVehicle		   HmvVehicle	
+void getSpec()			void getSpec()			void getSpec()		
+{				{				{
+	// Tw--operation part		// Lmv--operation part		// Hmv--operation part
+}				}				}
+----------------------------
+//Vehicle v = new Vehicle();
+
+// Runtime Polymorphism
+Vehicle v = new TwVehicle();
+
+v.getSpec();// TwVehicle--getSpec();
+
+v = new LmvVehicle();
+v.getSpec();// LmvVehicle--getSpec();
+
+
+v = new HmvVehicle();
+v.getSpec();// HmvVehicle--getSpec();
+
+
+
+TwVehicle tw = new TwVehicle();
+LmvVehicle lmv = new LmvVehicle();
+HmvVehicle hmv = new HmvVehicle();
+----------------------------
+Vehicle v = new Vehicle();
+v.getSpec();
+----------------------------
+TwVehicle tw = new TwVehicle();
+tw.getSpec();
+----------------------------
+LmvVehicle lmv = new LmvVehicle();
+lmv.getSpec();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		

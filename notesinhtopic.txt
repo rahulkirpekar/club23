@@ -1,0 +1,93 @@
+Inheritance:-
+------------
+
+		A<---Parent Class	
+		|
+	-----------------
+	|	|	|
+	B	C	D<---Child Class
+
+		Type of Inheritance
+		-----------------------			By Class Not Possible
+		  |<---class				  |--By interface
+  ---------------------------------		 -----------------------
+      |	         |	     |			     |		    |	 
+1) Single 2) MultiLevel	3) Hierarchical		4) Multiple	5) Hybrid	
+
+1) Single Inheritance:-
+-----------------------
+class A
+{
+
+}
+class B extends A
+{
+
+}
+----------------------------
+2) MultiLevel Inheritance:-
+-----------------------------	
+class A
+{
+
+}
+class B extends A
+{
+
+}
+class C extends B
+{
+
+}
+-------------------------------
+3) Hierarchical Inheritance
+-----------------------------
+
+class A
+{
+
+}
+class B extends A
+{
+
+}
+class C extends A
+{
+
+}
+
+				Type of Relation
+				------------------
+	1) IS-A relation		2) Has--A relation[Aggregation]
+	-----------------		-----------------
+		|				|
+	 Inheritance			Employee----Address
+					Employee
+  ChildClass	    ParentClass		{
+          |		 | 			Address address = new Address();	
+	Employee IS-A Person--TRUE
+					}
+
+	Person IS-A Employee--FALSE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
