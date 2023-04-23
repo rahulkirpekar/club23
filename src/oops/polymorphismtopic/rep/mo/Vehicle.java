@@ -1,9 +1,14 @@
 package oops.polymorphismtopic.rep.mo;
 
-public class Vehicle 
+public abstract class Vehicle 
 {
-	public void getSpec() 
-	{
-		System.out.println("Vehicle---getSpec()");
-	}
+	// 1) Dm's
+	// 2) Mf's
+	//   ---> static method
+	//   ---> private method
+	//   ---> final method
+	//   ---> abstract method
+	//  ---> final + abstract method... ---[C.E]
+	
+	public abstract void getSpec(); 
 }

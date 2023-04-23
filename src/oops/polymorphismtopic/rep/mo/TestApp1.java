@@ -16,7 +16,7 @@ public class TestApp1
 		Vehicle v = null;
 		switch(choice) 
 		{
-			case 1: v = new TwVehicle();
+			case 1: v = new ElecTwVehicle();
 					v.getSpec();
 				break;
 			case 2: v = new LmvVehicle();
