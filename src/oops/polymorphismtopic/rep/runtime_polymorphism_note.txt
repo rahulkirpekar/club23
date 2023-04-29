@@ -73,7 +73,59 @@ int getRoi()			int getRoi()			int getRoi()
 r = new AxisBank();
 
 System.out.println(" AxisBank Rateof Interest : " + r.getRoi());
+-----------------------------------------------------------------------
 
+
+29/4/2023
+
+
+
+Abstrcation--- To Increase Application Security.
+------------
+		Type of Abstrcation
+		-------------------
+1) 0 to 100 abstraction		2) 100% abstrcation
+------------------------	------------------------	
+--> Asbtract class		---> interface
+
+public abstract class Vehicle
+{
+	// 1) Dm's
+	// 2) Mf's
+		1) Abstract Method
+		2) NonAbstract Method
+	// 3) Static method
+	// 4) final method
+	// 5) constructor 
+	//public abstract void getSpec();	
+}
+
+			Vehicle(public abstract void getSpec();)
+			  |
+	----------------------------------------------
+	|		  |			|
+    TwVehicle		LmvVehicle	  HmvVehicle
+    getSpec()            getSpec()         
+
+
+
+
+
+
+
+Final -- is a NonAccess Modifier
+--------
+1) local
+2) Dm's / Instance variable
+3) method
+4) class
+
+		A--test---
+		|
+		B--test---final
+		|
+		C
+		
 
 
 

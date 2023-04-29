@@ -7,8 +7,14 @@ public abstract class Vehicle
 	//   ---> static method
 	//   ---> private method
 	//   ---> final method
-	//   ---> abstract method
+	//   ---> abstract method	
 	//  ---> final + abstract method... ---[C.E]
 	
 	public abstract void getSpec(); 
+	
+	public void test1()
+	{
+		
+	}
+	
 }
